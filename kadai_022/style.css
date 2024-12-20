@@ -1,0 +1,121 @@
+
+
+h1, p, body{
+  margin: 0px;
+}
+
+p, a {
+  font-size: 20px;
+}
+
+header{
+  /* 下の余白 */
+  margin-bottom: 20px;
+
+  /* 背景色 */
+  background-color:  rgb(244, 79, 79);
+
+  /* 中央 */
+  text-align: center;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+}
+
+main{
+  margin: 10px;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.contents{
+  /* 線*/
+  border: solid 3px rgb(238, 204, 204);
+
+  /* 幅 */
+  flex-basis: 25%;
+
+  /* 要素内　余白 */
+  padding: 10px 15px;
+
+  /* 要素外　余白 */
+  margin: 20px 0px;
+
+  /* 中央揃え */
+  text-align: center;
+}
+
+h2{
+  /* フォントサイズ */
+  font-size: 25px;
+
+  /* 下線 */
+  border-bottom: dotted 3px rgb(236, 122, 122);
+≈
+}
+
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter{
+  /* 太文字 */
+  font-weight: bold;
+
+  /* 文字色 */
+  color: rgb(97, 206, 249);
+
+}
+
+.contents img{
+  margin: 10px 0px;
+  width: 70%;
+}
+
+footer{
+  /* 背景色 */
+  background-color: rgb(244, 79, 79);
+
+  /* 中央 */
+  text-align: center;
+}
+
+a{
+  /* 文字色 */
+  color: rgb(255, 255, 255);
+
+}
+
+/* 訪問済み */
+a:visited{
+  color: rgb(193, 234, 251);
+
+}
+
+/* hover */
+a:hover{
+  color: rgb(245, 178, 168);
+
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px){
+  h2{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+
+  .flexbox-container{
+    display: block;
+
+  }
+}
