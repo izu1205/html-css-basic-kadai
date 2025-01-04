@@ -48,8 +48,11 @@ body{
 }
 
 #menu-sp{
+  display: block;
+  background-color: #ce933e;
   float: right;
   padding: 0px;
+  border: none;
 }
 
 #nav-sp{
@@ -65,6 +68,14 @@ body{
   display: none;
   z-index: 100;
 }
+
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ce933e;
+  border: none;
+} 
 
 #nav-sp ul{
   padding-left: 0px;
@@ -93,6 +104,11 @@ body{
 
 #nav-sp a:visited{
   color: #ffff;
+}
+
+#nav-sp a:hover{
+  color: #ffff;
+  text-decoration: underline;
 }
 
 #nav-sp a:active{
